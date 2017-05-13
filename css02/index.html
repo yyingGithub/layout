@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style type="text/css">
+    body {
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .top {
+        margin: 0 auto;
+        height: 100px;
+        background: green;
+    }
+
+    .main {
+        position: absolute;
+        top: 100px;
+        bottom: 100px;
+        width: 100%;
+        background: black;
+    }
+
+    .left {
+        position: absolute;
+        left: 0;
+        top:0;
+        bottom: 0;
+        width: 200px;
+        background: blue;
+    }
+
+    .right {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        left: 200px;
+        background: red;
+    }
+
+    .foot {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        margin: 0 auto;
+        height: 100px;
+        background: yellowgreen;
+    }
+</style>
+<body>
+<!--top宽度自适应，高度是100-->
+<div class="top">top</div>
+<div class="main">
+    <!--宽度是200，高度自适应-->
+    <div class="left">left</div>
+    <!--宽度和高度自适应-->
+    <div class="right">right</div>
+</div>
+<!--高度是100，宽度自适应-->
+<div class="foot">foot</div>
+</body>
+</html>
